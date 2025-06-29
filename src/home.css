@@ -63,9 +63,9 @@ ul.topnav li a:hover {
     position: relative;
     font-family: 'Urbanist', sans-serif;
     color: black;
-    font-size:80px;
+    font-size:87px;
     font-weight: 100;
-    top: 60%;
+    top: 45%;
     text-align: center;
     display: inline-block;
  }
@@ -85,7 +85,7 @@ ul.topnav li a:hover {
     position: relative;
     font-family: 'Urbanist', sans-serif;
     color: black;
-    font-size: 140px;
+    font-size: 120px;
     font-weight: 800;
     text-align: center;
     text-shadow: 0 0 10px rgba(255, 147, 0, 0.48);
@@ -151,11 +151,12 @@ ul.topnav li a:hover {
 
     position: absolute;
     font-size: 60px;
-    letter-spacing: 5px;
-    font-weight: 400;
+    letter-spacing: 3px;
+    font-weight: 800;
     top: 20%;
     left: 10%;
-    right: 0%;
+    color: rgba(0, 0, 0, 0.7);
+
     bottom: 40%;
 }
 .iam{
@@ -177,7 +178,6 @@ ul.topnav li a:hover {
     font-weight: 400;
     top: 50%;
     left: 10%;
-    right: 0%;
     bottom: 40%;
 }
 
@@ -202,23 +202,23 @@ section {
 }
 
 #home {
-    position: relative; /* for absolute positioning inside */
+    position: relative;
     background-color: #F7EFEC;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    overflow: visible; /* allow circle overflow */
+    overflow: visible;
 }
 
 #home .circle {
     position: absolute;
-    bottom: -400px; /* sink half outside #home */
-    left: 50%;
+    bottom: -400px;
+    align-content: center;
     transform: translateX(-50%);
     width: 800px;
-    height: 800px; /* equal width & height = circle */
+    height: 800px;
     background:
             url('pattern.png') repeat,
             linear-gradient(to top, rgba(255, 168, 0, 0.74), rgba(255, 168, 0, 0.8));
@@ -226,29 +226,36 @@ section {
     z-index: -1;
 
 }
-
-#about {
-    position: relative; /* for absolute positioning inside */
-    background-color: #EEECEE;
-    overflow: visible;
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-4px); }
+    40% { transform: translateY(2px); }
+    60% { transform: translateX(4px); }
+    80% { transform: translateY(2px); }
+    100% { transform: translateX(0); }
 }
 
-#about .circle-half {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 800px;
-    height: 400px; /* half the height of full circle */
-    background:
-            url('pattern.png') repeat,
-            linear-gradient(to top, rgba(255, 168, 0, 0.74), rgba(255, 168, 0, 0.8));
-    border-top-left-radius: 400px;
-    border-top-right-radius: 400px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    z-index: -1;
+.dis {
+    animation: shake 8s ease-in-out infinite;
 }
+#hello {
+    animation: shake 8s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.circle {
+    animation: spin 200s linear infinite;
+}
+
+
+
+
+
+
 
 #service {
     background-color: #E5E8F0;

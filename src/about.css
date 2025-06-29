@@ -1,0 +1,119 @@
+
+    #about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        background-color: #EEECEE;
+        background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+        overflow: visible;
+        min-height: 100vh;
+    }
+
+    .a2 {
+        position: absolute;
+        top: 2%;
+        font-size: 40px;
+        align-items: center;
+    }
+    .dot{
+        font-size: 100px;
+        color: #ff9300;
+    }
+    .ab_dis{
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.51);
+    }
+
+    .info-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        padding: 64px 32px;
+    }
+
+    .card {
+        position: relative;
+        top: 20%;
+        background: rgba(156, 156, 156, 0.2);
+        border-radius: 20px;
+        padding: 32px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        width: 500px;
+        max-width: 90%;
+        height: 600px;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card .icon {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .card h3 {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .card p {
+        line-height: 1.6;
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+
+    .card ul {
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .card ul li {
+        margin-bottom: 12px;
+    }
+
+    .bio {
+        max-width: 800px;
+        margin: 32px auto;
+        background: #f1f5ff;
+        padding: 32px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .bio .highlight {
+        color: #2b4fff;
+        font-weight: 600;
+        font-size: 19px;
+    }
+
+    .bio p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+
+    #about .circle-half {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 400px; /* half the height of full circle */
+    background:
+            url('pattern.png') repeat,
+            linear-gradient(to top, rgba(255, 168, 0, 0.74), rgba(255, 168, 0, 0.8));
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+
+    z-index: -1;
+}
+
