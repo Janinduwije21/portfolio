@@ -6,8 +6,7 @@
         flex-direction: column;
         position: relative;
         background-color: #EEECEE;
-        background-image: url("https://www.transparenttextures.com/patterns/connected.png");
-        overflow: visible;
+        background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");        overflow: visible;
         min-height: 100vh;
     }
 
@@ -60,23 +59,30 @@
     }
 
     .card h3 {
-        font-size: 22px;
+        font-size: 27px;
         margin-bottom: 16px;
     }
 
     .card p {
         line-height: 1.6;
-        font-size: 15px;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
         margin-bottom: 16px;
     }
 
     .card ul {
         padding-left: 20px;
-        font-size: 15px;
+        line-height: 1.9;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 17px;
+        font-weight: 600;
     }
 
     .card ul li {
-        margin-bottom: 12px;
+        margin-bottom: 20px;
+
     }
 
     .bio {

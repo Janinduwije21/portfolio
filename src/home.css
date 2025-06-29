@@ -139,7 +139,7 @@ ul.topnav li a:hover {
     position: absolute;
     bottom: 0;
     left: -200px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.27), #ffffff);
+    background-color: rgba(238, 236, 238, 0.7);
     direction: ltr;
     border-top-left-radius: 100px;
     width: 800px;
@@ -210,6 +210,8 @@ section {
     align-items: center;
     justify-content: start;
     overflow: visible;
+    border-bottom: 10px solid rgb(255, 147, 0);
+
 }
 
 #home .circle {
