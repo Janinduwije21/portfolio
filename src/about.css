@@ -1,5 +1,5 @@
 
-    #about {
+    #about{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -8,8 +8,10 @@
         background-color: #EEECEE;
         background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");        overflow: visible;
         min-height: 100vh;
+        border-bottom:15px dotted rgba(0, 0, 0, 0.38);
     }
 
+    /*background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");*/
     .a2 {
         position: absolute;
         top: 2%;
@@ -50,7 +52,7 @@
     }
 
     .card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-20px);
     }
 
     .card .icon {
