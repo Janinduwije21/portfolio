@@ -1,0 +1,57 @@
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 9999;
+}
+
+.welcome {
+    font-size: 100px;
+    font-weight: bold;
+    background: linear-gradient(
+            90deg,
+            black,
+            rgba(0, 0, 0, 0.7),
+            #ffffff
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: sideFade 2s ease-in-out infinite alternate;
+}
+
+@keyframes sideFade {
+    100% {
+        background-position: 0% center;
+    }
+    0% {
+        background-position: 100% center;
+    }
+}
+
+.loading2-gif{
+    width: 110px;
+    height: 110px;
+}
+
+
+/* Fade-out animation (optional) */
+.fade-out {
+    animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
