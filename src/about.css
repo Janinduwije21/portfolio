@@ -125,3 +125,143 @@
     z-index: -1;
 }
 
+
+    @media (max-width: 1024px) { /* Tablets */
+        .a2 {
+            font-size: 35px;
+            top: 5%;
+        }
+
+        .ab_dis {
+            font-size: 18px;
+            top: 12%;
+        }
+
+        .info-section {
+            flex-direction: column; /* Stack cards vertically */
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            width: 80%; /* Adjust card width */
+            max-width: 600px;
+            height: auto; /* Allow height to adjust */
+            padding: 25px;
+            top: 15%; /* Adjust vertical position */
+        }
+
+        .card h3 {
+            font-size: 24px;
+        }
+
+        .card p,
+        .card ul {
+            font-size: 16px;
+        }
+
+        .card ul li {
+            margin-bottom: 15px;
+        }
+
+        #about .circle-half {
+            width: 600px;
+            height: 300px;
+            border-top-left-radius: 300px;
+            border-top-right-radius: 300px;
+        }
+    }
+
+    @media (max-width: 768px) { /* Smaller tablets and large phones */
+        .a2 {
+            font-size: 30px;
+            top: 8%;
+        }
+
+        .dot {
+            font-size: 80px;
+        }
+
+        .ab_dis {
+            font-size: 16px;
+            top: 15%;
+            text-align: center;
+        }
+
+        .info-section {
+            padding: 30px 15px;
+        }
+
+        .card {
+            width: 95%;
+            padding: 20px;
+            top: 10%; /* Adjust vertical position further */
+        }
+
+        .card h3 {
+            font-size: 22px;
+        }
+
+        .card p,
+        .card ul {
+            font-size: 15px;
+        }
+
+        #about .circle-half {
+            width: 400px;
+            height: 200px;
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+        }
+    }
+
+    @media (max-width: 480px) { /* Phones */
+        .a2 {
+            font-size: 25px;
+            top: 10%;
+        }
+
+        .dot {
+            font-size: 60px;
+        }
+
+        .ab_dis {
+            font-size: 14px;
+            top: 18%;
+        }
+
+        .info-section {
+            padding: 20px 10px;
+        }
+
+        .card {
+            width: 100%; /* Full width on small screens */
+            padding: 15px;
+            top: 5%; /* Closer to the top */
+        }
+
+        .card .icon {
+            font-size: 28px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+        }
+
+        .card p,
+        .card ul {
+            font-size: 14px;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+        }
+
+        #about .circle-half {
+            width: 300px;
+            height: 150px;
+            border-top-left-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+    }
+

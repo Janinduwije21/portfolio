@@ -142,7 +142,7 @@
     }
 }
 
-#resume {
+#my_projects {
     background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
 }
 
@@ -177,5 +177,133 @@
 
     .skill span {
         font-size: 0.9rem;
+    }
+}
+
+
+/* skills.css */
+
+/* ... (existing CSS) ... */
+
+@media (max-width: 1024px) { /* Tablets */
+    #skills {
+        padding: 50px 20px;
+    }
+
+    .skill_top {
+        max-width: 500px;
+        margin: -10px auto 20px auto;
+    }
+
+    .skill_top h1,
+    .skill_top .my_skills {
+        font-size: 35px;
+        margin-top: -55px; /* Adjust as needed */
+    }
+
+    .skill_top .par {
+        font-size: 0.9rem;
+    }
+
+    .skills-category-1,
+    .skills-category-2 {
+        width: 90%; /* Adjust width for tablets */
+        left: 0; /* Reset left positioning */
+        margin: 20px auto; /* Center the categories */
+        padding: 25px;
+    }
+
+    .skills-category-2 {
+        margin-top: 20px; /* Adjust margin between categories */
+        margin-bottom: 0; /* Remove negative margin */
+    }
+
+    .skills-category h2 {
+        font-size: 1.4rem;
+    }
+
+    .skill span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) { /* Smaller tablets and large phones */
+    #skills {
+        padding: 40px 15px;
+    }
+
+    .skill_top {
+        height: auto; /* Allow height to adjust */
+        max-width: 95%;
+        padding: 15px;
+        margin-top: -5px; /* Adjust more */
+    }
+
+    .skill_top h1,
+    .skill_top .my_skills {
+        font-size: 30px;
+        margin-top: -45px; /* Adjust more */
+    }
+
+    .skill_top .par {
+        font-size: 0.85rem;
+    }
+
+    .skills-grid {
+        gap: 15px;
+    }
+
+    .skills-category-1,
+    .skills-category-2 {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .skills-category h2 {
+        font-size: 1.3rem;
+    }
+
+    .skill span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) { /* Phones */
+    #skills {
+        padding: 30px 10px;
+    }
+
+    .skill_top {
+        max-width: 100%;
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    .skill_top h1,
+    .skill_top .my_skills {
+        font-size: 25px;
+        margin-top: -30px; /* Adjust more */
+    }
+
+    .skill_top .par {
+        font-size: 0.8rem;
+    }
+
+    .skills-grid {
+        gap: 10px;
+    }
+
+    .skills-category-1,
+    .skills-category-2 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .skills-category h2 {
+        font-size: 1.2rem;
+    }
+
+    .skill span {
+        font-size: 14px;
     }
 }

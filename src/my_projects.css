@@ -1,0 +1,132 @@
+/* my_project.css */
+
+/* My Projects Section Styling */
+#my_projects {
+    padding: 60px 20px;
+    background-color: #f9fafc;
+    text-align: center;
+}
+
+.menu-container {
+    margin-bottom: 40px;
+}
+
+.filter-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.filter-menu li a {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.filter-menu li a:hover {
+    background-color: #ff9300;
+    color: white;
+    border-color: #ff9300;
+}
+
+.filter-menu li a.active {
+    background-color: #ff9300;
+    color: white;
+    border-color: #ff9300;
+    box-shadow: 0 4px 8px rgba(255, 147, 0, 0.2);
+}
+
+/* Project Items Styling */
+.project-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.project-card {
+    display: block;
+}
+
+
+/* Responsive Media Queries for my_project.css */
+@media (max-width: 1024px) { /* Tablets */
+    .filter-menu {
+        gap: 10px;
+    }
+
+    .filter-menu li a {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) { /* Smaller tablets and large phones */
+    .project-items {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) { /* Phones */
+    .filter-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .filter-menu li {
+        width: 90%;
+    }
+
+    .filter-menu li a {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .project-items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+}

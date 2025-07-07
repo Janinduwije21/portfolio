@@ -1,3 +1,5 @@
+/* home.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,6 @@ html{
 }
 
 nav {
-
     width: 75%;
     background-color: #120606;
     padding: 15px 2.5%;
@@ -22,9 +23,6 @@ nav {
     justify-content: space-between;
     height: 80px;
     margin-top: 30px;
-
-
-
 }
 
 ul.topnav {
@@ -34,7 +32,6 @@ ul.topnav {
     gap: 25px;
     flex: 1;
     justify-content: space-evenly;
-
 }
 
 ul.topnav li {
@@ -51,8 +48,6 @@ ul.topnav li a {
     transition: all 0.4s ease-in-out;
     font-weight: 400;
     font-size: 20px;
-
-
 }
 
 ul.topnav li a:hover {
@@ -71,18 +66,18 @@ ul.topnav li a:hover {
     top: 45%;
     text-align: center;
     display: inline-block;
- }
+}
 
 #name {
-     font-family: 'Urbanist', sans-serif;
-     text-align: center;
-     position: absolute;
-     top: 48%;
-     left: 50%;
-     bottom: 20%;
-     transform: translate(-50%, -50%);
-     z-index: 2;
- }
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
 
 #ui {
     position: relative;
@@ -138,7 +133,6 @@ ul.topnav li a:hover {
 }
 
 .discription{
-
     position: absolute;
     bottom: 0;
     left: -200px;
@@ -151,7 +145,6 @@ ul.topnav li a:hover {
 }
 .dis{
     font-family: 'Urbanist', sans-serif;
-
     position: absolute;
     font-size: 60px;
     letter-spacing: 3px;
@@ -159,7 +152,6 @@ ul.topnav li a:hover {
     top: 20%;
     left: 10%;
     color: rgba(0, 0, 0, 0.7);
-
     bottom: 40%;
 }
 .iam{
@@ -173,7 +165,6 @@ ul.topnav li a:hover {
 }
 .about{
     font-family: 'Urbanist', sans-serif;
-
     position: absolute;
     font-size: 16px;
     letter-spacing: 3px;
@@ -183,7 +174,6 @@ ul.topnav li a:hover {
     left: 10%;
     bottom: 40%;
 }
-
 
 #character {
     position: absolute;
@@ -214,7 +204,6 @@ section {
     justify-content: start;
     overflow: visible;
     border-bottom: 10px solid rgb(255, 147, 0);
-
 }
 
 #home .circle {
@@ -229,7 +218,6 @@ section {
             linear-gradient(to top, rgba(255, 168, 0, 0.74), rgba(255, 168, 0, 0.8));
     border-radius: 50%;
     z-index: -1;
-
 }
 @keyframes shake {
     0% { transform: translateX(0); }
@@ -256,14 +244,6 @@ section {
     animation: spin 200s linear infinite;
 }
 
-
-
-
-
-
-
-
-
 #resume {
     background-color: #DBE5F1;
 }
@@ -274,4 +254,237 @@ section {
 
 #contact {
     background-color: #C9DEF5;
+}
+
+
+/* Responsive Media Queries for home.css */
+@media (max-width: 1024px) { /* Tablets */
+    nav {
+        width: 90%;
+        margin-top: 20px;
+        height: auto;
+        padding: 10px 2%;
+    }
+
+    ul.topnav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    ul.topnav li {
+        width: 100%;
+    }
+
+    ul.topnav li a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    #hello {
+        font-size: 60px;
+        top: 30%;
+    }
+
+    #name {
+        top: 40%;
+    }
+
+    #ui {
+        font-size: 90px;
+    }
+
+    #designer {
+        font-size: 25px;
+    }
+
+    .pic {
+        width: 600px;
+        height: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #character {
+        width: 250px;
+        height: 450px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .discription {
+        width: 100%;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        border-top-left-radius: 50px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .iam {
+        font-size: 35px;
+        left: 5%;
+        top: 5%;
+    }
+
+    .dis {
+        font-size: 45px;
+        left: 5%;
+        top: 20%;
+    }
+
+    .about {
+        font-size: 14px;
+        left: 5%;
+        top: 50%;
+        padding-right: 20px;
+    }
+
+    #home .circle {
+        width: 600px;
+        height: 600px;
+        bottom: -300px;
+    }
+}
+
+@media (max-width: 768px) { /* Smaller tablets and large phones */
+    nav {
+        width: 95%;
+        padding: 10px 1%;
+    }
+
+    ul.topnav li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #hello {
+        font-size: 45px;
+        top: 25%;
+    }
+
+    #ui {
+        font-size: 70px;
+    }
+
+    #designer {
+        font-size: 20px;
+    }
+
+    .pic {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    #character {
+        width: 200px;
+        height: 350px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .discription {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        border-top-left-radius: 20px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .iam {
+        font-size: 30px;
+        position: static;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .dis {
+        font-size: 35px;
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .about {
+        font-size: 13px;
+        position: static;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #home .circle {
+        width: 400px;
+        height: 400px;
+        bottom: -200px;
+    }
+}
+
+@media (max-width: 480px) { /* Phones */
+    nav {
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+
+    ul.topnav {
+        gap: 5px;
+    }
+
+    ul.topnav li a {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    #hello {
+        font-size: 35px;
+        top: 20%;
+    }
+
+    #ui {
+        font-size: 50px;
+    }
+
+    #designer {
+        font-size: 18px;
+    }
+
+    #character {
+        width: 180px;
+        height: 300px;
+    }
+
+    .iam {
+        font-size: 25px;
+    }
+
+    .dis {
+        font-size: 30px;
+    }
+
+    .about {
+        font-size: 12px;
+    }
+
+    #home .circle {
+        width: 300px;
+        height: 300px;
+        bottom: -150px;
+    }
 }

@@ -17,3 +17,33 @@ window.addEventListener('load', () => {
         }, 1000); // match fade duration
     }, 2000);
 });
+
+// home.js (or portfolio.js)
+
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-menu a');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            e.target.classList.add('active');
+
+            const filterValue = e.target.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    if (card.classList.contains(filterValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
