@@ -1,267 +1,297 @@
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #EEECEE;
+    background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+    overflow: visible;
+    min-height: 100vh;
+}
 
-    #about{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        background-color: #EEECEE;
-        background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");        overflow: visible;
-        min-height: 100vh;
+.a2 {
+    position: absolute;
+    top: 2%;
+    font-size: 40px;
+    align-items: center;
+}
+.dot{
+    font-size: 100px;
+    color: #ff9300;
+}
+.ab_dis{
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.51);
+}
 
-    }
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    padding: 64px 32px;
+}
 
-    /*background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");*/
-    .a2 {
-        position: absolute;
-        top: 2%;
-        font-size: 40px;
-        align-items: center;
-    }
-    .dot{
-        font-size: 100px;
-        color: #ff9300;
-    }
-    .ab_dis{
-        position: absolute;
-        top: 15%;
-        font-size: 20px;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0.51);
-    }
+.card {
+    position: relative;
+    top: 20%;
+    background: rgba(156, 156, 156, 0.2);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 500px;
+    max-width: 90%;
+    height: 600px;
+    transition: transform 0.3s ease;
+}
 
-    .info-section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
-        justify-content: center;
-        padding: 64px 32px;
-    }
+.card:hover {
+    transform: translateY(-20px);
+}
 
-    .card {
-        position: relative;
-        top: 20%;
-        background: rgba(156, 156, 156, 0.2);
-        border-radius: 20px;
-        padding: 32px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        width: 500px;
-        max-width: 90%;
-        height: 600px;
-        transition: transform 0.3s ease;
-    }
+.card .icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
 
-    .card:hover {
-        transform: translateY(-20px);
-    }
+.card h3 {
+    font-size: 27px;
+    margin-bottom: 16px;
+}
 
-    .card .icon {
-        font-size: 32px;
-        margin-bottom: 16px;
-    }
+.card p {
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
 
-    .card h3 {
-        font-size: 27px;
-        margin-bottom: 16px;
-    }
+.card ul {
+    padding-left: 20px;
+    line-height: 1.9;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 17px;
+    font-weight: 600;
+}
 
-    .card p {
-        line-height: 1.6;
-        color: rgba(0, 0, 0, 0.7);
-        font-size: 17px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        margin-bottom: 16px;
-    }
+.card ul li {
+    margin-bottom: 20px;
+}
 
-    .card ul {
-        padding-left: 20px;
-        line-height: 1.9;
-        color: rgba(0, 0, 0, 0.7);
-        font-size: 17px;
-        font-weight: 600;
-    }
-
-    .card ul li {
-        margin-bottom: 20px;
-
-    }
-
-    .bio {
-        max-width: 800px;
-        margin: 32px auto;
-        background: #f1f5ff;
-        padding: 32px;
-        border-radius: 20px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .bio .highlight {
-        color: #2b4fff;
-        font-weight: 600;
-        font-size: 19px;
-    }
-
-    .bio p {
-        font-size: 16px;
-        line-height: 1.8;
-    }
-
-
-
-    #about .circle-half {
+#about .circle-half {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 800px;
     height: 400px; /* half the height of full circle */
-    background:
-            url('pattern.png') repeat,
-            linear-gradient(to top, rgba(255, 168, 0, 0.74), rgba(255, 168, 0, 0.8));
+    background: url('pattern.png') repeat, linear-gradient(to top, rgba(255, 168, 0, 0.74), rgba(255, 168, 0, 0.8));
     border-top-left-radius: 400px;
     border-top-right-radius: 400px;
-
     z-index: -1;
 }
 
+.about-social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+    margin-top: 40px; /* Space from the info cards */
+    padding-bottom: 40px; /* Ensure space at the bottom of the section */
+}
 
-    @media (max-width: 1024px) { /* Tablets */
-        .a2 {
-            font-size: 35px;
-            top: 5%;
-        }
+.about-social-icons a {
+    display: inline-block;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    padding: 10px; /* Slightly larger padding for about section */
+    transition: 0.3s;
+}
 
-        .ab_dis {
-            font-size: 18px;
-            top: 12%;
-        }
+.about-social-icons a:hover {
+    background-color: #ff9300;
+}
 
-        .info-section {
-            flex-direction: column; /* Stack cards vertically */
-            align-items: center;
-            padding: 40px 20px;
-        }
+.about-social-icons a img {
+    width: 55px; /* Slightly larger icons for about section */
+    height: 55px;
+    vertical-align: middle;
+}
 
-        .card {
-            width: 80%; /* Adjust card width */
-            max-width: 600px;
-            height: auto; /* Allow height to adjust */
-            padding: 25px;
-            top: 15%; /* Adjust vertical position */
-        }
-
-        .card h3 {
-            font-size: 24px;
-        }
-
-        .card p,
-        .card ul {
-            font-size: 16px;
-        }
-
-        .card ul li {
-            margin-bottom: 15px;
-        }
-
-        #about .circle-half {
-            width: 600px;
-            height: 300px;
-            border-top-left-radius: 300px;
-            border-top-right-radius: 300px;
-        }
+@media (max-width: 1024px) { /* Tablets */
+    .a2 {
+        font-size: 35px;
+        top: 5%;
     }
 
-    @media (max-width: 768px) { /* Smaller tablets and large phones */
-        .a2 {
-            font-size: 30px;
-            top: 8%;
-        }
-
-        .dot {
-            font-size: 80px;
-        }
-
-        .ab_dis {
-            font-size: 16px;
-            top: 15%;
-            text-align: center;
-        }
-
-        .info-section {
-            padding: 30px 15px;
-        }
-
-        .card {
-            width: 95%;
-            padding: 20px;
-            top: 10%; /* Adjust vertical position further */
-        }
-
-        .card h3 {
-            font-size: 22px;
-        }
-
-        .card p,
-        .card ul {
-            font-size: 15px;
-        }
-
-        #about .circle-half {
-            width: 400px;
-            height: 200px;
-            border-top-left-radius: 200px;
-            border-top-right-radius: 200px;
-        }
+    .ab_dis {
+        font-size: 18px;
+        top: 12%;
     }
 
-    @media (max-width: 480px) { /* Phones */
-        .a2 {
-            font-size: 25px;
-            top: 10%;
-        }
-
-        .dot {
-            font-size: 60px;
-        }
-
-        .ab_dis {
-            font-size: 14px;
-            top: 18%;
-        }
-
-        .info-section {
-            padding: 20px 10px;
-        }
-
-        .card {
-            width: 100%; /* Full width on small screens */
-            padding: 15px;
-            top: 5%; /* Closer to the top */
-        }
-
-        .card .icon {
-            font-size: 28px;
-        }
-
-        .card h3 {
-            font-size: 20px;
-        }
-
-        .card p,
-        .card ul {
-            font-size: 14px;
-        }
-
-        .card ul li {
-            margin-bottom: 10px;
-        }
-
-        #about .circle-half {
-            width: 300px;
-            height: 150px;
-            border-top-left-radius: 150px;
-            border-top-right-radius: 150px;
-        }
+    .info-section {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        padding: 40px 20px;
     }
 
+    .card {
+        width: 80%; /* Adjust card width */
+        max-width: 600px;
+        height: auto; /* Allow height to adjust */
+        padding: 25px;
+        top: 15%; /* Adjust vertical position */
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    .card p,
+    .card ul {
+        font-size: 16px;
+    }
+
+    .card ul li {
+        margin-bottom: 15px;
+    }
+
+    #about .circle-half {
+        width: 600px;
+        height: 300px;
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+    }
+
+    .about-social-icons {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    .about-social-icons a {
+        padding: 10px;
+    }
+    .about-social-icons a img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 768px) { /* Smaller tablets and large phones */
+    .a2 {
+        font-size: 30px;
+        top: 8%;
+    }
+
+    .dot {
+        font-size: 80px;
+    }
+
+    .ab_dis {
+        font-size: 16px;
+        top: 15%;
+        text-align: center;
+    }
+
+    .info-section {
+        padding: 30px 15px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 20px;
+        top: 10%; /* Adjust vertical position further */
+    }
+
+    .card h3 {
+        font-size: 22px;
+    }
+
+    .card p,
+    .card ul {
+        font-size: 15px;
+    }
+
+    #about .circle-half {
+        width: 400px;
+        height: 200px;
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+    }
+    .about-social-icons {
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+    .about-social-icons a {
+        padding: 8px;
+    }
+    .about-social-icons a img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media (max-width: 480px) { /* Phones */
+    .a2 {
+        font-size: 25px;
+        top: 10%;
+    }
+
+    .dot {
+        font-size: 60px;
+    }
+
+    .ab_dis {
+        font-size: 14px;
+        top: 18%;
+    }
+
+    .info-section {
+        padding: 20px 10px;
+    }
+
+    .card {
+        width: 100%; /* Full width on small screens */
+        padding: 15px;
+        top: 5%; /* Closer to the top */
+    }
+
+    .card .icon {
+        font-size: 28px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p,
+    .card ul {
+        font-size: 14px;
+    }
+
+    .card ul li {
+        margin-bottom: 10px;
+    }
+
+    #about .circle-half {
+        width: 300px;
+        height: 150px;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+    }
+    .about-social-icons {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .about-social-icons a {
+        padding: 6px;
+    }
+    .about-social-icons a img {
+        width: 24px;
+        height: 24px;
+    }
+}
