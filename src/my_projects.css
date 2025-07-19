@@ -53,7 +53,13 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.project_img {
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    height:210px;
+    width:350px;
+}
 .project-card {
     background-color: #ffffff;
     border-radius: 10px;
