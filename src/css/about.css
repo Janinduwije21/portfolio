@@ -91,7 +91,7 @@
     transform: translateX(-50%);
     width: 800px;
     height: 400px; /* half the height of full circle */
-    background: url('../images/pattern.png') repeat, linear-gradient(to top, rgba(255, 168, 0, 0.74), rgba(255, 168, 0, 0.8));
+    background: url('../../images/pattern.png') repeat, linear-gradient(to top, rgba(255, 168, 0, 0.74), rgba(255, 168, 0, 0.8));
     border-top-left-radius: 400px;
     border-top-right-radius: 400px;
     z-index: -1;
